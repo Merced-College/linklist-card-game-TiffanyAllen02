@@ -49,11 +49,11 @@ public class CardGame {
         // Print the loaded cards
         System.out.println("Cards loaded:");
         cardList.displayList();
-		
+		//Deal player's hand
 		Card[] playerHand = new Card[5];
 		for(int i = 0; i < playerHand.length; i++)
 			playerHand[i] = cardList.getFirst();
-		
+            
 		System.out.println("players hand");
 		for(int i = 0; i < playerHand.length; i++)
 			System.out.println(playerHand[i]);
