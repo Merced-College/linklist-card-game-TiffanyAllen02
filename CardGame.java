@@ -1,18 +1,11 @@
 //package linkedLists;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-//import java.util.ArrayList;
-//import java.util.List;
-import java.util.Scanner;
-
-
 
 public class CardGame {
-	
+
 	private static LinkList cardList = new LinkList();  // make list
 
 	public static void main(String[] args) {
@@ -62,6 +55,21 @@ public class CardGame {
 		System.out.println("the deck");
 		cardList.displayList();
 
-	}//end main
+        System.out.println("shuffling the deck...");
+        cardList.shuffleDeck();
 
+        System.out.println("shuffled deck:");
+        cardList.displayList();
+
+        System.out.println("dealing new hand...");
+        for (int i=0; i < playerHand.length; i++) {
+            playerHand[i] = cardList.getFirst();
+        }
+        System.out.println("new player's hand:");
+        for (Card card: playerHand) {
+            System.out.println(card);
+        }
+
+	}//end main
+    
 }//end class
