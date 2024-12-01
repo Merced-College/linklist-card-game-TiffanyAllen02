@@ -1,6 +1,25 @@
 
+import java.util.ArrayList;
+import java.util.Collections;
 public class LinkList
 {
+	public void shuffleDeck() { // random order of cards //IMPLEMENTED BY TIFFANY
+		ArrayList<Card> cardArray = new ArrayList<>();
+		Linkcurrent = first;
+		
+		while (current!= null) {
+			cardArray.add(current.cardLink);
+			current = current.next;
+		}
+		Collections.shuffle(cardArray);
+
+		first = null;
+
+		for (Card card: cardArray) {
+			add(card);
+		}
+
+	}
 	private Link first;            // ref to first link on list
 
 	//-------------------------------------------------------------
