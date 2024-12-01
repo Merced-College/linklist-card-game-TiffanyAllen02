@@ -8,7 +8,7 @@ public class Link
 	public Card cardLink;             // next link in list
 	public Link next;
 	//-------------------------------------------------------------
-	public Link(Card card) // constructor
+	public Link(Card card) // Link constructor
 	{
 		cardLink = card;
 	}

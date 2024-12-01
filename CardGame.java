@@ -55,7 +55,7 @@ public class CardGame {
 		System.out.println("the deck");
 		cardList.displayList();
 
-        System.out.println("shuffling the deck...");
+        System.out.println("shuffling the deck..."); //IMPLEMENTED BY TIFFANY: shuffle deck + deal new hand
         cardList.shuffleDeck();
 
         System.out.println("shuffled deck:");
